@@ -50,11 +50,11 @@ This project was developed as part of my **Frontend Development Internship Task 
 
 ### 🖥️ Light Mode
 
-*![Light Theme](lighttheme.jpg)*
+*![Light Theme](lighttheme.png)*
 
 ### 🌙 Dark Mode
 
-*![Dark Theme](darktheme.jpg)*
+*![Dark Theme](darktheme.png)*
 
 ---
 
