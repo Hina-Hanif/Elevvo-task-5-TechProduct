@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudSync Pro - Next-Gen Cloud Collaboration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="floating-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span class="logo-text">CloudSync Pro</span>
+                    </div>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#testimonials" class="nav-link">Reviews</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                    <button class="theme-toggle" id="themeToggle">
+                        <div class="theme-icon">
+                            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 1V3M12 21V23M4.22 4.22L5.64 5.64M18.36 18.36L19.78 19.78M1 12H3M21 12H23M4.22 19.78L5.64 18.36M18.36 5.64L19.78 4.22" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </button>
+                    <button class="btn btn-primary">Get Started</button>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge" data-aos="fade-up">
+                        <div class="badge-glow"></div>
+                        <span class="badge-icon">✨</span>
+                        <span>Trusted by 250K+ teams worldwide</span>
+                    </div>
+                    <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                        <span class="title-line">Transform Your</span>
+                        <span class="title-line gradient-text">Team Collaboration</span>
+                        <span class="title-line">Experience</span>
+                    </h1>
+                    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                        Experience seamless real-time collaboration with AI-powered insights, 
+                        lightning-fast sync, and enterprise-grade security. Join the future of productivity.
+                    </p>
+                    <div class="hero-cta" data-aos="fade-up" data-aos-delay="300">
+                        <button class="btn btn-primary btn-large glow-btn">
+                            <span>Start Free Trial</span>
+                            <div class="btn-shine"></div>
+                        </button>
+                        <button class="btn btn-glass btn-large">
+                            <svg class="play-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <polygon points="5,3 19,12 5,21" fill="currentColor"/>
+                            </svg>
+                            <span>Watch Demo</span>
+                        </button>
+                    </div>
+                    <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="250">0</div>
+                            <div class="stat-suffix">K+</div>
+                            <div class="stat-label">Active Users</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="99">0</div>
+                            <div class="stat-suffix">.9%</div>
+                            <div class="stat-label">Uptime</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="150">0</div>
+                            <div class="stat-suffix">+</div>
+                            <div class="stat-label">Countries</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual" data-aos="fade-left" data-aos-delay="500">
+                    <div class="dashboard-mockup">
+                        <div class="mockup-glow"></div>
+                        <div class="mockup-header">
+                            <div class="mockup-controls">
+                                <div class="control red"></div>
+                                <div class="control yellow"></div>
+                                <div class="control green"></div>
+                            </div>
+                            <div class="mockup-title">CloudSync Dashboard</div>
+                            <div class="mockup-actions">
+                                <div class="action-btn"></div>
+                                <div class="action-btn"></div>
+                            </div>
+                        </div>
+                        <div class="mockup-content">
+                            <div class="project-cards">
+                                <div class="project-card card-1">
+                                    <div class="project-header">
+                                        <div class="project-icon">📊</div>
+                                        <div class="project-info">
+                                            <div class="project-name">Project Alpha</div>
+                                            <div class="project-status">In Progress</div>
+                                        </div>
+                                        <div class="project-progress">85%</div>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill"></div>
+                                    </div>
+                                    <div class="team-avatars">
+                                        <div class="avatar avatar-1">A</div>
+                                        <div class="avatar avatar-2">M</div>
+                                        <div class="avatar avatar-3">S</div>
+                                        <div class="avatar-count">+8</div>
+                                    </div>
+                                </div>
+                                <div class="project-card card-2">
+                                    <div class="project-header">
+                                        <div class="project-icon">🚀</div>
+                                        <div class="project-info">
+                                            <div class="project-name">Launch Beta</div>
+                                            <div class="project-status">Review</div>
+                                        </div>
+                                        <div class="project-progress">92%</div>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill"></div>
+                                    </div>
+                                    <div class="team-avatars">
+                                        <div class="avatar avatar-4">J</div>
+                                        <div class="avatar avatar-5">K</div>
+                                        <div class="avatar-count">+3</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="activity-feed">
+                                <div class="activity-item">
+                                    <div class="activity-dot pulse"></div>
+                                    <div class="activity-content">
+                                        <div class="activity-text">Hina updated design files</div>
+                                        <div class="activity-time">2 minutes ago</div>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-dot"></div>
+                                    <div class="activity-content">
+                                        <div class="activity-text">New comment on task #247</div>
+                                        <div class="activity-time">5 minutes ago</div>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-dot"></div>
+                                    <div class="activity-content">
+                                        <div class="activity-text">Project milestone completed</div>
+                                        <div class="activity-time">1 hour ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="floating-cards">
+                        <div class="floating-card card-1">
+                            <div class="card-icon">⚡</div>
+                            <div class="card-text">Real-time Sync</div>
+                        </div>
+                        <div class="floating-card card-2">
+                            <div class="card-icon">🔒</div>
+                            <div class="card-text">Secure</div>
+                        </div>
+                        <div class="floating-card card-3">
+                            <div class="card-icon">🚀</div>
+                            <div class="card-text">Lightning Fast</div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features-section" id="features">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">
+                    <span>Features</span>
+                    <div class="badge-glow"></div>
+                </div>
+                <h2 class="section-title">Powerful Tools for Modern Teams</h2>
+                <p class="section-subtitle">
+                    Everything you need to streamline workflows and boost productivity
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3 class="feature-title">Lightning Fast Sync</h3>
+                    <p class="feature-description">
+                        Experience real-time collaboration with our advanced delta sync technology. 
+                        Changes appear instantly across all devices and platforms.
+                    </p>
+                    <div class="feature-link">
+                        <span>Learn more</span>
+                        <svg class="arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.09 9A3 3 0 0 1 12 6C13.66 6 15 7.34 15 9C15 10.66 13.66 12 12 12C10.34 12 9 10.66 9 9Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M21 21V19C21 16.79 19.21 15 17 15H7C4.79 15 3 16.79 3 19V21" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3 class="feature-title">AI-Powered Insights</h3>
+                    <p class="feature-description">
+                        Get intelligent recommendations and automated workflows powered by 
+                        advanced machine learning algorithms and predictive analytics.
+                    </p>
+                    <div class="feature-link">
+                        <span>Learn more</span>
+                        <svg class="arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="16" r="1" fill="currentColor"/>
+                                <path d="M7 11V7A5 5 0 0 1 17 7V11" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3 class="feature-title">Enterprise Security</h3>
+                    <p class="feature-description">
+                        Bank-level encryption, SSO integration, and compliance with 
+                        SOC 2, GDPR, HIPAA, and other industry standards.
+                    </p>
+                    <div class="feature-link">
+                        <span>Learn more</span>
+                        <svg class="arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                <path d="M2 12H22" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 2A15.3 15.3 0 0 1 16 12A15.3 15.3 0 0 1 12 22A15.3 15.3 0 0 1 8 12A15.3 15.3 0 0 1 12 2Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3 class="feature-title">Global CDN</h3>
+                    <p class="feature-description">
+                        Lightning-fast performance worldwide with our distributed 
+                        content delivery network across 80+ regions globally.
+                    </p>
+                    <div class="feature-link">
+                        <span>Learn more</span>
+                        <svg class="arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.7 6.3A1 1 0 0 0 13 5H5A2 2 0 0 0 3 7V19A2 2 0 0 0 5 21H17A2 2 0 0 0 19 19V11A1 1 0 0 0 17.7 9.7L14.7 6.3Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M14 2V8H20" stroke="currentColor" stroke-width="2"/>
+                                <path d="M16 13H8" stroke="currentColor" stroke-width="2"/>
+                                <path d="M16 17H8" stroke="currentColor" stroke-width="2"/>
+                                <path d="M10 9H8" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3 class="feature-title">500+ Integrations</h3>
+                    <p class="feature-description">
+                        Connect seamlessly with your favorite tools including Slack, 
+                        Notion, Figma, GitHub, and hundreds more popular platforms.
+                    </p>
+                    <div class="feature-link">
+                        <span>Learn more</span>
+                        <svg class="arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 3V21H21" stroke="currentColor" stroke-width="2"/>
+                                <path d="M9 9L12 6L16 10L21 5" stroke="currentColor" stroke-width="2"/>
+                                <path d="M21 5H16V10" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3 class="feature-title">Advanced Analytics</h3>
+                    <p class="feature-description">
+                        Deep insights into team productivity, project timelines, 
+                        and collaboration patterns with beautiful interactive dashboards.
+                    </p>
+                    <div class="feature-link">
+                        <span>Learn more</span>
+                        <svg class="arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">
+                    <span>Testimonials</span>
+                    <div class="badge-glow"></div>
+                </div>
+                <h2 class="section-title">Loved by Teams Worldwide</h2>
+                <p class="section-subtitle">
+                    See what industry leaders are saying about CloudSync Pro
+                </p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-glow"></div>
+                    <div class="testimonial-header">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-badge">Verified</div>
+                    </div>
+                    <p class="testimonial-content">
+                        "CloudSync Pro transformed our remote team's productivity. The real-time 
+                        collaboration features are game-changing, and the AI insights help 
+                        us stay ahead of deadlines consistently."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Sarah Chen">
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Sarah Chen</div>
+                            <div class="author-title">VP of Engineering, TechCorp</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-glow"></div>
+                    <div class="testimonial-header">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-badge">Verified</div>
+                    </div>
+                    <p class="testimonial-content">
+                        "The integration capabilities are outstanding. We connected all our 
+                        tools in minutes, and our team's efficiency increased by 75% in 
+                        the first month. Absolutely incredible!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Marcus Johnson">
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Marcus Johnson</div>
+                            <div class="author-title">Product Manager, InnovateLab</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-glow"></div>
+                    <div class="testimonial-header">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <div class="testimonial-badge">Verified</div>
+                    </div>
+                    <p class="testimonial-content">
+                        "Security was our top concern, and CloudSync Pro exceeded expectations. 
+                        The enterprise features and compliance certifications give us 
+                        complete peace of mind for sensitive projects."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Elena Rodriguez">
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Elena Rodriguez</div>
+                            <div class="author-title">CISO, SecureFinance</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section pricing-section" id="pricing">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">
+                    <span>Pricing</span>
+                    <div class="badge-glow"></div>
+                </div>
+                <h2 class="section-title">Choose Your Perfect Plan</h2>
+                <p class="section-subtitle">
+                    Transparent pricing that scales with your team's growth
+                </p>
+                <div class="pricing-toggle">
+                    <span class="toggle-label">Monthly</span>
+                    <div class="toggle-switch" id="pricingToggle">
+                        <div class="toggle-slider"></div>
+                    </div>
+                    <span class="toggle-label">
+                        Yearly 
+                        <span class="discount-badge">Save 30%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-glow"></div>
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Starter</h3>
+                        <div class="plan-price">
+                            <span class="currency">$</span>
+                            <span class="amount" data-monthly="15" data-yearly="11">15</span>
+                            <span class="period">/user/month</span>
+                        </div>
+                        <p class="plan-description">Perfect for small teams getting started</p>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Up to 10 team members</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>100GB storage per user</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Basic integrations</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Email support</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Mobile & desktop apps</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline btn-full">Start Free Trial</button>
+                </div>
+                <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="popular-badge">
+                        <span>Most Popular</span>
+                        <div class="badge-glow"></div>
+                    </div>
+                    <div class="pricing-glow"></div>
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Professional</h3>
+                        <div class="plan-price">
+                            <span class="currency">$</span>
+                            <span class="amount" data-monthly="29" data-yearly="21">29</span>
+                            <span class="period">/user/month</span>
+                        </div>
+                        <p class="plan-description">Best for growing teams and businesses</p>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Unlimited team members</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>1TB storage per user</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>All integrations</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Priority support</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Advanced analytics</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Custom workflows</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-full glow-btn">
+                        <span>Start Free Trial</span>
+                        <div class="btn-shine"></div>
+                    </button>
+                </div>
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pricing-glow"></div>
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Enterprise</h3>
+                        <div class="plan-price">
+                            <span class="currency">$</span>
+                            <span class="amount" data-monthly="59" data-yearly="42">59</span>
+                            <span class="period">/user/month</span>
+                        </div>
+                        <p class="plan-description">For large organizations with advanced needs</p>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Everything in Professional</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Unlimited storage</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Advanced security controls</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>24/7 phone support</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Custom branding</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Dedicated success manager</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline btn-full">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <div class="cta-glow"></div>
+                <div class="cta-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h2 class="cta-title">Ready to Transform Your Workflow?</h2>
+                <p class="cta-subtitle">
+                    Join over 250,000 teams who trust CloudSync Pro for seamless collaboration
+                </p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary btn-large glow-btn">
+                        <span>Start Free 14-Day Trial</span>
+                        <div class="btn-shine"></div>
+                    </button>
+                    <button class="btn btn-glass btn-large">Schedule Demo</button>
+                </div>
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>No credit card required</span>
+                    </div>
+                    <div class="cta-feature">
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Cancel anytime</span>
+                    </div>
+                    <div class="cta-feature">
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>24/7 support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span class="logo-text">CloudSync Pro</span>
+                    </div>
+                    <p class="footer-tagline">
+                        Empowering teams to collaborate without limits
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 2H15C12.79 2 11 3.79 11 6V9H8V14H11V22H16V14H19L20 9H16V6C16 5.45 16.45 5 17 5H18V2Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23 3A10.9 10.9 0 0 1 20.1 4.1A4.48 4.48 0 0 0 22.46 2A9 9 0 0 1 19.36 3.5A4.48 4.48 0 0 0 12 7.44V8.5A10.66 10.66 0 0 1 3 4S-1 13 8 17A11.64 11.64 0 0 1 0 19C9 24 20 19 20 7.5A4.5 4.5 0 0 0 19.83 6A7.72 7.72 0 0 0 23 3Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 8A6 6 0 0 1 6 18C5 16 13 16 16 8Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M15 18A5 5 0 0 0 5 8" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 8A6 6 0 0 1 6 18C5 16 13 16 16 8Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M15 18A5 5 0 0 0 5 8" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Product</h4>
+                        <a href="#" class="footer-link">Features</a>
+                        <a href="#" class="footer-link">Integrations</a>
+                        <a href="#" class="footer-link">API</a>
+                        <a href="#" class="footer-link">Pricing</a>
+                        <a href="#" class="footer-link">Security</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Company</h4>
+                        <a href="#" class="footer-link">About</a>
+                        <a href="#" class="footer-link">Careers</a>
+                        <a href="#" class="footer-link">Blog</a>
+                        <a href="#" class="footer-link">Press</a>
+                        <a href="#" class="footer-link">Partners</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Resources</h4>
+                        <a href="#" class="footer-link">Help Center</a>
+                        <a href="#" class="footer-link">Community</a>
+                        <a href="#" class="footer-link">Status</a>
+                        <a href="#" class="footer-link">Changelog</a>
+                        <a href="#" class="footer-link">Documentation</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Legal</h4>
+                        <a href="#" class="footer-link">Privacy</a>
+                        <a href="#" class="footer-link">Terms</a>
+                        <a href="#" class="footer-link">Cookies</a>
+                        <a href="#" class="footer-link">GDPR</a>
+                        <a href="#" class="footer-link">Compliance</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    © 2024 CloudSync Pro. All rights reserved.
+                </div>
+                <!-- <div class="footer-badges">
+                    <div class="security-badge">🔒 SOC 2 Certified</div>
+                    <div class="security-badge">🛡️ GDPR Compliant</div>
+                    <div class="security-badge">⚡ 99.9% Uptime</div>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
